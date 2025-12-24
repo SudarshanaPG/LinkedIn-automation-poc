@@ -1,0 +1,87 @@
+auth:
+  login_url: "https://www.linkedin.com/login"
+  cookie_path: "data/cookies.json"
+  reuse_cookies: true
+  save_cookies: true
+  checkpoint_pause: true
+
+search:
+  company_only: true
+  companies:
+    - "SubSpace"
+    - "Google"
+    - "Microsoft"
+    - "Amazon"
+    - "Flipkart"
+  leads_file: ""
+  title: ""
+  company: ""
+  location: ""
+  keywords: []
+  max_pages: 2
+  max_leads: 25
+  sort_by: "relevance"
+
+connect:
+  daily_limit: 25
+  max_per_run: 8
+  note_template: "Hi {{FirstName}}, I'm a student in Bengaluru exploring software opportunities and would love to connect."
+  skip_if_sent: true
+
+messaging:
+  daily_limit: 25
+  max_per_run: 8
+  template: "Thanks for connecting, {{FirstName}}! I'm a student in Bengaluru interested in Golang/backend. If you have time, I'd appreciate any advice on internships/careers."
+  follow_up_delay_hr: 24
+
+stealth:
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+  locale: "en-IN"
+  timezone: "Asia/Kolkata"
+  viewport_width: 1366
+  viewport_height: 768
+  headless: false
+  mouse_move_jitter: 3
+  think_time_min_ms: 600
+  think_time_max_ms: 1800
+  typing_delay_min_ms: 45
+  typing_delay_max_ms: 190
+  scroll_step_min: 280
+  scroll_step_max: 820
+  enable_rod_stealth: true
+  randomize_viewport: true
+  viewport_variance_px: 80
+  action_interval_min_ms: 350
+  action_interval_max_ms: 1200
+  scroll_back_chance: 15
+  typo_chance: 4
+  mouse_wander_chance: 20
+  hover_pause_min_ms: 200
+  hover_pause_max_ms: 800
+
+schedule:
+  enabled: true
+  timezone: "Asia/Kolkata"
+  business_days: [1, 2, 3, 4, 5]
+  start_hour: 9
+  end_hour: 17
+  breaks:
+    - "12:00-12:45"
+    - "15:15-15:30"
+  enforce: false
+
+limits:
+  connection_per_hour: 8
+  message_per_hour: 8
+
+storage:
+  path: "data/state.json"
+  flush_interval_seconds: 15
+
+logging:
+  level: "info"
+  format: "text"
+  path: ""
+
+browser:
+  executable_path: ""

@@ -1,0 +1,30 @@
+auth:
+  login_url: "http://localhost:7777/login"
+  cookie_path: "data/mock-cookies.json"
+  reuse_cookies: true
+  save_cookies: true
+  checkpoint_pause: false
+
+search:
+  leads_file: "leads.mock.txt.example"
+  max_pages: 1
+  max_leads: 10
+
+connect:
+  daily_limit: 50
+  max_per_run: 5
+  note_template: "Hi {{FirstName}}, I'm a student in Bengaluru exploring software opportunities and would love to connect. (mock demo)"
+  skip_if_sent: true
+
+messaging:
+  daily_limit: 50
+  max_per_run: 5
+  template: "Thanks for connecting, {{FirstName}}! I'm a student in Bengaluru interested in Golang/backend. (mock demo)"
+  follow_up_delay_hr: 0
+
+stealth:
+  headless: false
+
+storage:
+  path: "data/mock-state.json"
+  flush_interval_seconds: 5

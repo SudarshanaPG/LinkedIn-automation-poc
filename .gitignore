@@ -1,0 +1,6 @@
+.env
+data/
+config.yaml
+config.mock.yaml
+*.log
+linkedin-poc.exe
