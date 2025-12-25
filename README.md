@@ -114,7 +114,8 @@ go run ./cmd/linkedin-poc -config config.mock.leads.yaml.example
 
 ## Demo Video
 
-TODO: Add a walkthrough video link here once recorded.
+- Demo 1: https://drive.google.com/file/d/1GJbep-1qyapiNIHdj5bEszfhp2L6sn2z/view?usp=drive_link
+- Demo 2: https://drive.google.com/file/d/1WMcp_Z0A_cLv3wBDcVqaFtvbegrbVsTk/view?usp=drive_link
 
 ## Notes
 
